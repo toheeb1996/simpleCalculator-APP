@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator.com</title>
+  <link rel="stylesheet" href="./simpleCal.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon"
+    href="https://s3-alpha.figma.com/hub/file/905678057/579ed270-9231-4782-830d-bcca23f15d69-cover.png"
+    type="image/x-icon">
+  <!-- fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- this is the answer section -->
+  <div class="divC">
+    <h6>Simple calculator....</h6>
+    <h6 id="date"></h6>
+    <div id="answer" class="answer">
+    </div>
+
+    <!-- this is the display section -->
+    <div id="display" class="display">
+    </div>
+
+    <!-- this is the button section -->
+    <div class="button">
+      <div class="line1">
+        <button onclick="cleared()">C</button>
+        <button onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+        <button onclick="percentage()">%</button>
+        <button onclick="display('/')">&divide;</button>
+      </div>
+
+      <div class="line2">
+        <button onclick="display(7)">7</button>
+        <button onclick="display(8)">8</button>
+        <button onclick="display(9)">9</button>
+        <button onclick="display('*')">*</button>
+      </div>
+
+      <div class="line3">
+        <button onclick="display(4)">4</button>
+        <button onclick="display(5)">5</button>
+        <button onclick="display(6)">6</button>
+        <button onclick="display('-')">-</button>
+      </div>
+
+      <div class="line4">
+        <button onclick="display(1)">1</button>
+        <button onclick="display(2)">2</button>
+        <button onclick="display(3)">3</button>
+        <button onclick="display('+')">+</button>
+      </div>
+      <div class="line5">
+        <button onclick="display(0)">0</button>
+        <button onclick="display('.')">.</button>
+        <button class="equal" onclick="answer()">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./simpleCal.js">
+  </script>
+</body>
+
+</html>
